@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -42,9 +42,10 @@
         min-width: 320px;
     }
       
-    /* Card div - Slightly reduce whitespace above card title */
+    /* Card div - Slightly reduce vertical whitespace content padding */
     .yse7za_content {
         padding-top: 3px;
+        padding-bottom: 6px;
     }
     
     /* Card title text spans */
