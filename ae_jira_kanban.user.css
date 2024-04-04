@@ -9,7 +9,7 @@
 ==/UserStyle== */
 
 
-@-moz-document domain("appfolio.atlassian.net") {
+@-moz-document domain("atlassian.net") {
     /* Board title row with board name, top-right nav buttons - Reduce vertical whitespace */
     .css-1eekove {
         margin-bottom: -25px;
