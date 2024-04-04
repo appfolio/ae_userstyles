@@ -58,7 +58,7 @@ To publish a new version of the `ae_jira_kanban` styles:
 3. Create a pull request for your branch, and have it reviewed and QA'ed by someone on your team, in the usual fashion.
 4. Merge the pull request.
 
-The updates will automatically be picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban). (As of April 2024, userstyles.world picks up changes every 4 hours, starting daily at 00:00 UTC.)
+The updates will automatically be picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban). (As of April 2024, userstyles.world picks up changes every 4 hours, starting daily at 00:04 UTC. [See details.](https://userstyles.world/docs/faq#how-does-mirroring-source-code-work))
 
 The Stylus browser extension periodically checks for, and applies, updates from the userstyles.world mirror (for users who originally installed from there). 
 
