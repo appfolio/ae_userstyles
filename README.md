@@ -35,14 +35,14 @@ After that's been done, your Stylus extension should automatically obtain and ap
 
 ### Specific Improvements (as of v1.0.1)
 
-- No longer truncates card titles
+- Card titles are no longer truncated!
 - Removes on-hover card title tool tips. (No longer needed now that titles aren't truncated!)
 - Uses the full card width when displaying card titles
 - Moves each card's `...` on-hover button to the bottom-left corner (to avoid obscuring card titles)
 - Slightly increases card and column width
 - Reduces unneeded vertical whitespace in the top header portion of the board
 - Increases the column header font size
-- Slightly reduces whitespace used by the column header row
+- Slightly reduces vertical whitespace in the column header row
 - Replaces the default green "Task" card type icon (which looks very similar to the green "Story" card type icon) with an orange square icon
 - Displays due dates in red
 
