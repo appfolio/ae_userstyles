@@ -74,5 +74,5 @@ Alternatively (if you aren't using it for anything else): Just disable or uninst
 ### Special Thanks
 
 - Julie DeMello, for contributing some of the original CSS!
+- Seth VanBrocklin and Dean Johnson, for contributing to the project launch!
 - AppFolio leadership, for continuing to sponsor Hack Days, without which this project would not exist!
-
