@@ -51,6 +51,19 @@
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
     }
     
+    /* Card on-hover tool tips - Remove. (No longer needed now that we aren't truncating card titles) */
+    .atlaskit-portal { 
+        display: none;
+    }
+
+    /* Card "..." on-hover button - Move to lower-left of card (to avoid obscuring card title on hover) */
+    [data-test-id="platform-card.ui.card.actions-section"] {
+        top: initial;
+        right: initial;
+        bottom: var(--ds-space-100);
+        left: var(--ds-space-100);
+    }
+    
     /* Replace the "task" card type icon with an orange box */
     img[src="https://appfolio.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10311?size=medium"] {
         content: url('https://placehold.co/20x20/orange/orange')
