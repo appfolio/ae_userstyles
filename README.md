@@ -19,18 +19,19 @@ Makes the Jira Kanban view more pleasant to use: Increases screen real estate de
 
 1. Visit https://userstyles.world/style/15633/ae-jira-kanban 
 2. Scroll down on that page a bit, and click the blue Install button. 
-3. In the Stylus extension page that opens, click the Install Style button (near the top-left corner.)
-4. Visit your Jira Kanban board, and enjoy the improvements!
+3. In the Stylus extension page that opens, click the Install Style button (near the top-left corner).
+
+Now, browse to your Jira Kanban board, and enjoy the improvements!
 
 ### Notes
 
-This add-on is dependant on what are evidently machine-generated CSS class names used by Atlassian on Jira Kanban board pages. Therefore, styles may break from time to time when Atlassian pushes a UI update.
+This add-on is dependent on what are evidently machine-generated CSS class names used by Atlassian on Jira Kanban board pages. Therefore, styles may break from time to time when Atlassian pushes a UI update.
 
 (Historically, this does appear to be a fairly infrequent occurrence; on the order of once every few months, as of April 2024.)
 
 When this happens, ideally, someone will push an update to this repository with fixes in reasonably short order! 
 
-After that's been done, your Stylus extension should automatically obtain and apply the updates from the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban).
+After that's been done, your Stylus extension should automatically obtain and apply the updates from the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban) -- no need for you to take any manual action!
 
 ### Specific Improvements (as of v1.0.1)
 
@@ -49,5 +50,7 @@ After that's been done, your Stylus extension should automatically obtain and ap
 
 1. Browse to your Jira Kanban board. 
 2. In the Stylus extensions settings, uncheck the `ae_jira_kanban` style.
+
+(Tip: You can also uncheck and re-check `ae_jira_kanban` repeatedly, to observe the changes that the updated styles are making to your Jira Kanban board!)
 
 Alternatively (if you aren't using it for anything else): Just disable or uninstall the Stylus extension from your browser.
