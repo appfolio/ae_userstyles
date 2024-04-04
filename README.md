@@ -37,8 +37,8 @@ After that's been done, your Stylus extension should automatically obtain and ap
 
 - No longer truncates card titles
 - Removes on-hover card title tool tips. (No longer needed now that titles aren't truncated!)
-- Use full card with when displaying card titles
-- Move the card "..." on-hover button to the bottom-left corner (to avoid obscuring card titles)
+- Uses the full card width when displaying card titles
+- Moves each card's `...` on-hover button to the bottom-left corner (to avoid obscuring card titles)
 - Slightly increases card and column width
 - Reduces unneeded vertical whitespace in the top header portion of the board
 - Increases the column header font size
