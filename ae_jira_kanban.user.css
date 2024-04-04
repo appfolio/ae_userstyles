@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -41,7 +41,7 @@
     .gnltj8-0 {
         min-width: 320px;
     }
-      
+    
     /* Card div - Slightly reduce vertical whitespace content padding */
     .yse7za_content {
         padding-top: 3px;
@@ -55,7 +55,7 @@
     }
     
     /* Card on-hover tool tips - Remove. (No longer needed now that we aren't truncating card titles) */
-    .atlaskit-portal { 
+    .Tooltip.css-1kad8p3 {
         display: none;
     }
 
