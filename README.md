@@ -46,6 +46,22 @@ After that's been done, your Stylus extension should automatically obtain and ap
 - Replaces the default green "Task" card type icon (which looks very similar to the green "Story" card type icon) with an orange square icon
 - Displays due dates in red
 
+### How To Contribute
+
+_Note: At the current time, contributions are only accepted from AppFolio employees._
+
+To publish a new version of the `ae_jira_kanban` styles:
+
+1. As you would normally when doing development, clone this repository (if you haven't already), and create a new git branch
+2. Make your changes (including appropriate comments, please!) to `ae_jira_kanban.user.css`, commit, and push.
+    - Be sure to increment the `@version` number in the `UserStyle` headers at the top of the file (using typical [semantic versioning](https://semver.org/) practices); otherwise, the changes won't be automatically picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban), and automatically distributed to users.
+3. Create a pull request for your branch, and have it reviewed and QA'ed by someone on your team, in the usual fasion.
+4. Merge the pull request.
+
+The updates will automatically be picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban). (As of April 2024, userstyles.world picks up changes every 4 hours, starting daily at 00:00 UTC.)
+
+The Stylus browser extension periodically checks for, and applies, updates from the userstyles.world mirror (for users who originally installed from there). 
+
 ### Uninstallation Instructions
 
 1. Browse to your Jira Kanban board. 
