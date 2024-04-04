@@ -55,7 +55,7 @@ To publish a new version of the `ae_jira_kanban` styles:
 1. As you would normally when doing development, clone this repository (if you haven't already), and create a new git branch
 2. Make your changes (including appropriate comments, please!) to `ae_jira_kanban.user.css`, commit, and push.
     - Be sure to increment the `@version` number in the `UserStyle` headers at the top of the file (using typical [semantic versioning](https://semver.org/) practices); otherwise, the changes won't be automatically picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban), and automatically distributed to users.
-3. Create a pull request for your branch, and have it reviewed and QA'ed by someone on your team, in the usual fasion.
+3. Create a pull request for your branch, and have it reviewed and QA'ed by someone on your team, in the usual fashion.
 4. Merge the pull request.
 
 The updates will automatically be picked up by the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban). (As of April 2024, userstyles.world picks up changes every 4 hours, starting daily at 00:00 UTC.)
@@ -70,3 +70,9 @@ The Stylus browser extension periodically checks for, and applies, updates from 
 (Tip: You can also uncheck and re-check `ae_jira_kanban` repeatedly, to observe the changes that the updated styles are making to your Jira Kanban board!)
 
 Alternatively (if you aren't using it for anything else): Just disable or uninstall the Stylus extension from your browser.
+
+### Special Thanks
+
+- Julie DeMello, for contributing some of the original CSS!
+- AppFolio leadership, for continuing to sponsor Hack Days, without which this project would not exist!
+
