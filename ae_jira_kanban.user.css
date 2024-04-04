@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name           ae_jira_kanban
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Make the Jira Kanban board more usable
+@author         ae_jira_kanban Team
+==/UserStyle== */
+
+
+@-moz-document domain("appfolio.atlassian.net") {
+    /* Board title row with board name, top-right nav buttons - Reduce vertical whitespace */
+    .css-1eekove {
+        margin-bottom: -25px;
+    }
+
+    /* Page top section - Reduce vertical whitespace */
+    .css-cayjis {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    /* Top nav row with search field, partipant icons, "Epic" and other dropdowns - Reduce vertical whitespace */
+    ._otyrxy5q {
+        margin-bottom: 5px;
+    }
+
+    /* Column header row div - Reduce vertical whitespace */
+    [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"] {
+        height: 30px;
+    }
+       
+    /* Column headers - Increase font size/weight */
+    h2.__board-test-hook__column-title {
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+   /* Column header div - Increase card and column width */
+    .gnltj8-0 {
+        min-width: 320px;
+    }
+      
+    /* Card div - Slightly reduce whitespace above card title */
+    .yse7za_content {
+        padding-top: 3px;
+    }
+    
+    /* Card title text spans */
+    ._slp31hna {
+        padding-right: 0px; /* Allow card title to span full card width */
+        -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
+    }
+    
+    /* Replace the "task" card type icon with an orange box */
+    img[src="https://appfolio.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10311?size=medium"] {
+        content: url('https://placehold.co/20x20/orange/orange')
+    }
+    
+    /* Color due dates red */
+    div[data-issuefieldid="duedate"] {
+        color: #f00;
+    }
+}
