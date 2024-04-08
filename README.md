@@ -33,7 +33,7 @@ When this happens, ideally, someone will push an update to this repository with 
 
 After that's been done, your Stylus extension should automatically obtain and apply the updates from the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban) -- no need for you to take any manual action!
 
-### Specific Improvements (as of v1.0.2)
+### Specific Improvements (as of v1.0.3)
 
 - Card titles are no longer truncated!
 - Removes on-hover card title tool tips. (No longer needed now that titles aren't truncated!)
