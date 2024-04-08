@@ -1,11 +1,10 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
-@updateURL      https://github.com/appfolio/ae_userstyles/raw/master/ae_jira_kanban.user.css
 ==/UserStyle== */
 
 
@@ -37,9 +36,9 @@
         font-size: 15px;
     }
     
-   /* Column header div - Increase card and column width */
-    .gnltj8-0 {
-        min-width: 320px;
+    /* Column header div - Increase card and column width */
+    div[data-component-selector="platform-board-kit.ui.column.draggable-column"] {
+        min-width: 290px;
     }
     
     /* Card div - Slightly reduce vertical whitespace content padding */
@@ -54,7 +53,7 @@
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
     }
     
-    /* Card on-hover tool tips - Remove. (No longer needed now that we aren't truncating card titles) */
+    /* Card on-hover tool tips - Remove. (Unneeded now that we're preventing truncation of card titles!) */
     .Tooltip.css-1kad8p3 {
         display: none;
     }
