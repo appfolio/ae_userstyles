@@ -33,18 +33,19 @@ When this happens, ideally, someone will push an update to this repository with 
 
 After that's been done, your Stylus extension should automatically obtain and apply the updates from the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban) -- no need for you to take any manual action!
 
-### Specific Improvements (as of v1.0.3)
+### Specific Improvements (as of v1.0.5)
 
 - Card titles are no longer truncated!
 - Removes on-hover card title tool tips. (No longer needed now that titles aren't truncated!)
-- Uses the full card width when displaying card titles
-- Moves each card's `...` on-hover button to the bottom-left corner (to avoid obscuring card titles)
-- Slightly increases card and column width
-- Reduces unneeded vertical whitespace in the top header portion of the board
-- Increases the column header font size
-- Slightly reduces vertical whitespace in the column header row
-- Replaces the default green "Task" card type icon (which looks very similar to the green "Story" card type icon) with an orange square icon
-- Displays due dates in red
+- Also removes on-hover tool tips for card Epic labels, and card IDs. 
+- Uses the full card width when displaying card titles.
+- Moves each card's `...` on-hover button to the bottom-center (to reduce obscuring of other card elements).
+- Slightly increases card and column width.
+- Reduces unneeded vertical whitespace in the top header portion of the board.
+- Increases the column header font size.
+- Slightly reduces vertical whitespace in the column header row.
+- Replaces the default green "Task" card type icon (which looks very similar to the green "Story" card type icon) with an orange square icon.
+- Displays due dates in red.
 
 ### How To Contribute
 

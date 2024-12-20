@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -20,7 +20,7 @@
         margin-bottom: 2px;
     }
 
-    /* Top nav row with search field, partipant icons, "Epic" and other dropdowns - Reduce vertical whitespace */
+    /* Top nav row with search field, participant icons, "Epic" and other dropdowns - Reduce vertical whitespace */
     ._otyrxy5q {
         margin-bottom: 5px;
     }
@@ -29,49 +29,54 @@
     [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"] {
         height: 30px;
     }
-       
+
     /* Column headers - Increase font size/weight */
     h2.__board-test-hook__column-title {
         font-weight: 600;
         font-size: 15px;
     }
-    
+
     /* Column header div - Increase card and column width */
     div[data-component-selector="platform-board-kit.ui.column.draggable-column"] {
         min-width: 290px;
-        margin-right: 8px; /* Add a little spacing betweeen columns */
+        margin-right: 8px;
     }
-    
+
     /* Card div - Slightly reduce vertical whitespace content padding */
     .yse7za_content {
         padding-top: 3px;
         padding-bottom: 6px;
     }
-    
+
     /* Card title text spans */
     ._slp31hna {
-        padding-right: 0px; /* Allow card title to span full card width */
+        padding-right: 0; /* Allow card title to span full card width */
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
-    }
-    
-    /* Card on-hover tool tips - Remove. (Unneeded now that we're preventing truncation of card titles!) */
-    .Tooltip.css-1kad8p3 {
-        display: none;
+        pointer-events: none; /* Card title on-hover tool tips: remove. (Unneeded now that we're preventing truncation of card titles!) */
     }
 
-    /* Card "..." on-hover button - Move to lower-left of card (to avoid obscuring card title on hover) */
-    [data-test-id="platform-card.ui.card.actions-section"] {
-        top: initial;
-        right: initial;
-        bottom: var(--ds-space-100);
-        left: var(--ds-space-100);
+    /* Card ID labels (in the bottom left of each card) */
+    ._p12f1osq {
+        pointer-events: none; /* Card ID tool tips: remove */
     }
-    
+
+    /* Card Epic labels (with colored background, below the card title text) */
+    ._1reo15vq {
+        pointer-events: none; /* Card Epic label tool tips: remove */
+    }
+
+    /* Card "..." on-hover button - Move to bottom-center of card (to avoid obscuring other card elements on hover) */
+    [data-testid="platform-card.ui.card.actions-section"] {
+        top: initial;
+        right: 123px;
+        bottom: 5px;
+    }
+
     /* Replace the "task" card type icon with an orange box */
     img[src="https://appfolio.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10311?size=medium"] {
         content: url('https://placehold.co/20x20/orange/orange')
     }
-    
+
     /* Color due dates red */
     div[data-issuefieldid="duedate"] {
         color: #f00;
