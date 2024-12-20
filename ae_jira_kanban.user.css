@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -49,19 +49,19 @@
     }
 
     /* Card title text spans */
-    ._slp31hna {
+    .css-1qyv5a ._slp31hna {
         padding-right: 0; /* Allow card title to span full card width */
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
         pointer-events: none; /* Card title on-hover tool tips: remove. (Unneeded now that we're preventing truncation of card titles!) */
     }
 
     /* Card ID labels (in the bottom left of each card) */
-    ._p12f1osq {
+    .css-1qyv5a ._p12f1osq {
         pointer-events: none; /* Card ID tool tips: remove */
     }
 
     /* Card Epic labels (with colored background, below the card title text) */
-    ._1reo15vq {
+    .css-1qyv5a ._1reo15vq {
         pointer-events: none; /* Card Epic label tool tips: remove */
     }
 
