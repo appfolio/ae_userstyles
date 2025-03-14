@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
+@version        1.0.7
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -28,6 +28,20 @@
     /* Column header row div - Reduce vertical whitespace */
     [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"] {
         height: 30px;
+    }
+
+    /* Fix taller characters (e.g. certain emoji) in column header row being slightly truncated vertically */
+    [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"] > div {
+        padding-top: 20px;
+    }
+    [data-testid="platform-board-kit.common.ui.column-header.editable-title.inline-edit-part-wrapper"] {
+        height: 30px;
+    }
+    [data-testid="platform-board-kit.common.ui.column-header.editable-title.column-title.column-title"] {
+        height: 20px;
+    }
+    [data-testid="platform-board-kit.common.ui.column-header.editable-title.column-title.column-name"] {
+        padding-top: 2px;
     }
 
     /* Column headers - Increase font size/weight */
