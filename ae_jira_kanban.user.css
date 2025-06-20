@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.7
+@version        1.0.8
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -94,5 +94,10 @@
     /* Color due dates red */
     div[data-issuefieldid="duedate"] {
         color: #f00;
+    }
+
+    /* Hide the drag-drop column overlays (introduced ~June 2025) that obscure the ordering position in the destination column */
+    div[data-component-selector="platform-board-kit.ui.column.column-transition-zones-container.outer-transition-container"] {
+        display: none;
     }
 }
