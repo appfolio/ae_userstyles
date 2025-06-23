@@ -33,14 +33,14 @@ When this happens, ideally, someone will push an update to this repository with 
 
 After that's been done, your Stylus extension should automatically obtain and apply the updates from the [userstyles.world mirror](https://userstyles.world/style/15633/ae-jira-kanban) -- no need for you to take any manual action!
 
-### Specific Improvements (as of v1.0.8)
+### Specific Improvements (as of v1.0.9)
 
 - Card titles are no longer truncated!
 - Removes on-hover card title tool tips. (No longer needed now that titles aren't truncated!)
 - Also removes on-hover tool tips for card Epic labels, and card IDs. 
 - Uses the full card width when displaying card titles.
 - Moves each card's `...` on-hover button to the bottom-center (to reduce obscuring of other card elements).
-- Hides the drag-drop column overlays (introduced ~June 2025) that obscure the ordering position in the destination column.
+- Moves to behind the cards the column overlays (introduced ~June 2025) that prevent setting the order of card position in the destination column during card drag-drop.
 - Slightly increases card and column width.
 - Reduces unneeded vertical whitespace in the top header portion of the board.
 - Increases the column header font size.
