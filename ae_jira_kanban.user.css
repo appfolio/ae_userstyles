@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.8
+@version        1.0.9
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -86,18 +86,18 @@
         bottom: 5px;
     }
 
-    /* Replace the "task" card type icon with an orange box */
-    img[src="https://appfolio.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10311?size=medium"] {
-        content: url('https://placehold.co/20x20/orange/orange')
-    }
-
-    /* Color due dates red */
-    div[data-issuefieldid="duedate"] {
-        color: #f00;
-    }
-
-    /* Hide the drag-drop column overlays (introduced ~June 2025) that obscure the ordering position in the destination column */
+    /* Move the drag-drop column overlays (introduced ~June 2025) that would prevent position ordering in the destination column to behind the cards */
+    /* The drag-drop column overlays */
     div[data-component-selector="platform-board-kit.ui.column.column-transition-zones-container.outer-transition-container"] {
-        display: none;
+        opacity: 0.5; 
+        z-index: 2;
+    }
+    /* The visbile-only-on-column-hover "+ Create" buttons */
+    ul[data-testid="software-board.board-container.board.virtual-board.fast-virtual-list.fast-virtual-list-wrapper"] > li:last-of-type {
+        z-index: 1; 
+    }
+    /* The cards */
+    div[data-testid="software-board.board-container.board.card-container.card-with-icc"] {
+        z-index: 3;
     }
 }
