@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.9
+@version        1.0.10
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -87,17 +87,8 @@
     }
 
     /* Move the drag-drop column overlays (introduced ~June 2025) that would prevent position ordering in the destination column to behind the cards */
-    /* The drag-drop column overlays */
     div[data-component-selector="platform-board-kit.ui.column.column-transition-zones-container.outer-transition-container"] {
         opacity: 0.5; 
-        z-index: 2;
-    }
-    /* The visbile-only-on-column-hover "+ Create" buttons */
-    ul[data-testid="software-board.board-container.board.virtual-board.fast-virtual-list.fast-virtual-list-wrapper"] > li:last-of-type {
-        z-index: 1; 
-    }
-    /* The cards */
-    div[data-testid="software-board.board-container.board.card-container.card-with-icc"] {
-        z-index: 3;
+        z-index: 0;
     }
 }
