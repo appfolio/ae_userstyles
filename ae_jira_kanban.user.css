@@ -67,12 +67,7 @@
     .css-1qyv5a ._slp31hna {
         padding-right: 0; /* Allow card title to span full card width */
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
-        pointer-events: none; /* Card title on-hover tool tips: remove. (Unneeded now that we're preventing truncation of card titles!) */
-    }
-
-    /* Card ID labels (in the bottom left of each card) */
-    .css-1qyv5a ._p12f1osq {
-        pointer-events: none; /* Card ID tool tips: remove */
+        pointer-events: none; /* Card title on-hover tool tips: remove. (Those are unneeded now that we're preventing truncation of card titles!) */
     }
 
     /* Card Epic labels (with colored background, below the card title text) */
