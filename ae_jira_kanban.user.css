@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.11
+@version        1.0.12
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -67,7 +67,6 @@
     .css-1qyv5a ._slp31hna {
         padding-right: 0; /* Allow card title to span full card width */
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
-        pointer-events: none; /* Card title on-hover tool tips: remove. (Those are unneeded now that we're preventing truncation of card titles!) */
     }
 
     /* Card Epic labels (with colored background, below the card title text) */
@@ -82,6 +81,25 @@
         bottom: 5px;
     }
 
+    /* Prevent extra right margin whitespace from being added to card text when the inline edit icon is displayed */
+    .css-6cu6fo {
+        margin-right: 0px;
+    }
+    
+    /* Prevent card text to being contracted back to 3 lines when the inline edit icon is displayed */
+    ._1yyj11wp {
+        -webkit-line-clamp: 7 !important;
+    }
+
+    /* Card title on-hover tool tips: remove. (Unneeded now that we're preventing truncation of card titles!) */
+    ._19itglyw._vchhusvi._r06hglyw._2hwxxy5q._kqswh2mm._1bsb1osq {
+        pointer-events: none; 
+    }
+    /* Re-enable click events on the inline edit button, after they were suppressed by the above rule on an ancestor element */
+    [data-testid="issue-field-single-line-text-readview-card.ui.single-line-text.container.icon-button"] {
+        pointer-events: auto;
+    }
+    
     /* Move the drag-drop column overlays (introduced ~June 2025) that would prevent position ordering in the destination column to behind the cards */
     div[data-component-selector="platform-board-kit.ui.column.column-transition-zones-container.outer-transition-container"] {
         opacity: 0.5; 
