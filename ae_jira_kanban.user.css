@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.12
+@version        1.0.13
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -83,6 +83,11 @@
 
     /* Prevent extra right margin whitespace from being added to card text when the inline edit icon is displayed */
     .css-6cu6fo {
+        margin-right: 0px;
+    }
+
+    /* Prevent extra right margin whitespace from being added to card text after the mouse cursor enters the card area (and persisting even after the cursor leaves the card) */
+    ._2hwxxy5q {
         margin-right: 0px;
     }
     
