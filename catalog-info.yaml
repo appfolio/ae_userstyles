@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ae_userstyles
+  description: "CSS overrides to make the Jira Kanban view more pleasant to use"
+spec:
+  type: tool
+  lifecycle: stable
+  owner: CODEOWNERS
