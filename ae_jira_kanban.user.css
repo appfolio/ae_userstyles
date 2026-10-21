@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ae_jira_kanban
 @namespace      github.com/openstyles/stylus
-@version        1.0.13
+@version        1.0.14
 @description    Make the Jira Kanban board more pleasant to use
 @author         ae_jira_kanban Team
 @homepageURL    https://github.com/appfolio/ae_userstyles
@@ -10,24 +10,18 @@
 
 @-moz-document domain("atlassian.net") {
     /* Board title row with board name, top-right nav buttons - Reduce vertical whitespace */
-    .css-1eekove {
-        margin-bottom: -25px;
-    }
-
-    /* Page top section - Reduce vertical whitespace */
-    .css-cayjis {
-        margin-top: 2px;
-        margin-bottom: 2px;
+    .css-13b9nd5 {
+        margin-bottom: -18px;
     }
 
     /* Top nav row with search field, participant icons, "Epic" and other dropdowns - Reduce vertical whitespace */
-    ._otyrxy5q {
-        margin-bottom: 5px;
+    div[data-testid="software-board.header.controls-bar"] {
+        margin-bottom: -10px;
     }
 
     /* Column header row div - Reduce vertical whitespace */
-    [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"] {
-        height: 30px;
+    [data-testid="platform-board-kit.common.ui.column-header.header.column-header-container"]     {
+        height: 20px;
     }
 
     /* Fix taller characters (e.g. certain emoji) in column header row being slightly truncated vertically */
@@ -57,15 +51,13 @@
         margin-right: 8px;
     }
 
-    /* Card div - Slightly reduce vertical whitespace content padding */
-    .yse7za_content {
-        padding-top: 3px;
-        padding-bottom: 6px;
+    /* Card title text spans (prior to first user mouse hover */
+    ._36D0JM7LI7 {
+        -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
     }
 
-    /* Card title text spans */
-    .css-1qyv5a ._slp31hna {
-        padding-right: 0; /* Allow card title to span full card width */
+    /* Card title text spans (after first user mouse hover) */
+    span[data-testid="issue-field-single-line-text-readview-card.ui.single-line-text.container.box"] {
         -webkit-line-clamp: 7; /* Discontinue truncation of card titles (<= 7 lines) */
     }
 
@@ -81,23 +73,8 @@
         bottom: 5px;
     }
 
-    /* Prevent extra right margin whitespace from being added to card text when the inline edit icon is displayed */
-    .css-6cu6fo {
-        margin-right: 0px;
-    }
-
-    /* Prevent extra right margin whitespace from being added to card text after the mouse cursor enters the card area (and persisting even after the cursor leaves the card) */
-    ._2hwxxy5q {
-        margin-right: 0px;
-    }
-    
-    /* Prevent card text to being contracted back to 3 lines when the inline edit icon is displayed */
-    ._1yyj11wp {
-        -webkit-line-clamp: 7 !important;
-    }
-
     /* Card title on-hover tool tips: remove. (Unneeded now that we're preventing truncation of card titles!) */
-    ._19itglyw._vchhusvi._r06hglyw._2hwxxy5q._kqswh2mm._1bsb1osq {
+    ._0adFHsVa5s {
         pointer-events: none; 
     }
     /* Re-enable click events on the inline edit button, after they were suppressed by the above rule on an ancestor element */
